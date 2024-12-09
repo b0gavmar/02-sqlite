@@ -8,6 +8,6 @@ const doc = {
   host: 'localhost:3000',
   basePath: "/api/users"
 };
-const outputFile = './swagger-output.json';
+const outputFile = './swaggerDocument.json';
 const routes = ['./routes/users.js'];
 swaggerAutogen()(outputFile, routes, doc);
