@@ -10,9 +10,15 @@
   "schemes": [
     "http"
   ],
+  "tags": [
+    {
+      "name": "Users"
+    }
+  ],
   "paths": {
     "/": {
       "get": {
+        "tags": ["Users"],
         "description": "Returns all users",
         "responses": {
           "200": {
@@ -21,6 +27,7 @@
         }
       },
       "post": {
+        "tags": ["Users"],
         "description": "Adds a new user",
         "parameters": [
           {
@@ -54,6 +61,7 @@
     },
     "/{id}": {
       "get": {
+        "tags": ["Users"],
         "description": "Returns a specific user",
         "parameters": [
           {
@@ -73,6 +81,7 @@
         }
       },
       "put": {
+        "tags": ["Users"],
         "description": "Modifies a user",
         "parameters": [
           {
@@ -113,6 +122,7 @@
         }
       },
       "delete": {
+        "tags": ["Users"],
         "description": "Deletes a specific user",
         "parameters": [
           {
